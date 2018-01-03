@@ -1,0 +1,296 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103C8Tx U?
+U 1 1 5A4D049D
+P 4500 3600
+F 0 "U?" H 1700 5325 50  0000 L BNN
+F 1 "STM32F103C8Tx" H 7300 5325 50  0000 R BNN
+F 2 "LQFP48" H 7300 5275 50  0000 R TNN
+F 3 "" H 4500 3600 50  0000 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 P?
+U 1 1 5A4D0576
+P 10450 1450
+F 0 "P?" H 10450 1800 50  0000 C CNN
+F 1 "CONN_01X06" V 10550 1450 50  0000 C CNN
+F 2 "" H 10450 1450 50  0000 C CNN
+F 3 "" H 10450 1450 50  0000 C CNN
+	1    10450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG P?
+U 1 1 5A4D05D9
+P 10450 3150
+F 0 "P?" H 10775 3025 50  0000 C CNN
+F 1 "USB_OTG" H 10450 3350 50  0000 C CNN
+F 2 "" V 10400 3050 50  0000 C CNN
+F 3 "" V 10400 3050 50  0000 C CNN
+	1    10450 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4D0677
+P 9800 3050
+F 0 "R?" V 9880 3050 50  0000 C CNN
+F 1 "40" V 9800 3050 50  0000 C CNN
+F 2 "" V 9730 3050 50  0000 C CNN
+F 3 "" H 9800 3050 50  0000 C CNN
+	1    9800 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4D06DC
+P 9800 3150
+F 0 "R?" V 9880 3150 50  0000 C CNN
+F 1 "40" V 9800 3150 50  0000 C CNN
+F 2 "" V 9730 3150 50  0000 C CNN
+F 3 "" H 9800 3150 50  0000 C CNN
+	1    9800 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4D06FB
+P 9550 2750
+F 0 "R?" V 9630 2750 50  0000 C CNN
+F 1 "1.5K" V 9550 2750 50  0000 C CNN
+F 2 "" V 9480 2750 50  0000 C CNN
+F 3 "" H 9550 2750 50  0000 C CNN
+	1    9550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 3150 10150 3150
+Wire Wire Line
+	9950 3050 10150 3050
+Wire Wire Line
+	8950 3150 9650 3150
+Wire Wire Line
+	9400 2750 9400 3150
+$Comp
+L GND #PWR?
+U 1 1 5A4D0B6C
+P 10050 3650
+F 0 "#PWR?" H 10050 3400 50  0001 C CNN
+F 1 "GND" H 10050 3500 50  0000 C CNN
+F 2 "" H 10050 3650 50  0000 C CNN
+F 3 "" H 10050 3650 50  0000 C CNN
+	1    10050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3350 10150 3350
+Connection ~ 10050 3550
+Wire Wire Line
+	10050 3350 10050 3650
+Wire Wire Line
+	9400 3550 10550 3550
+Connection ~ 9400 3150
+Wire Wire Line
+	8950 3050 9650 3050
+Text GLabel 8950 3050 0    60   Input ~ 0
+USB_DM
+Text GLabel 8950 3150 0    60   Input ~ 0
+USB_DP
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 5A4D100F
+P 10000 2550
+F 0 "Q?" H 10200 2600 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 10200 2500 50  0000 L CNN
+F 2 "" H 10200 2650 50  0000 C CNN
+F 3 "" H 10000 2550 50  0000 C CNN
+	1    10000 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2750 9900 2750
+$Comp
+L +3.3V #PWR?
+U 1 1 5A4D1317
+P 9900 2250
+F 0 "#PWR?" H 9900 2100 50  0001 C CNN
+F 1 "+3.3V" H 9900 2390 50  0000 C CNN
+F 2 "" H 9900 2250 50  0000 C CNN
+F 3 "" H 9900 2250 50  0000 C CNN
+	1    9900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2250 9900 2350
+$Comp
+L +5V #PWR?
+U 1 1 5A4D14EA
+P 10100 2850
+F 0 "#PWR?" H 10100 2700 50  0001 C CNN
+F 1 "+5V" H 10100 2990 50  0000 C CNN
+F 2 "" H 10100 2850 50  0000 C CNN
+F 3 "" H 10100 2850 50  0000 C CNN
+	1    10100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2850 10100 2950
+Wire Wire Line
+	10100 2950 10150 2950
+$Comp
+L R R?
+U 1 1 5A4D1521
+P 10450 2400
+F 0 "R?" V 10530 2400 50  0000 C CNN
+F 1 "10K" V 10450 2400 50  0000 C CNN
+F 2 "" V 10380 2400 50  0000 C CNN
+F 3 "" H 10450 2400 50  0000 C CNN
+	1    10450 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4D1566
+P 10450 2650
+F 0 "R?" V 10530 2650 50  0000 C CNN
+F 1 "36K" V 10450 2650 50  0000 C CNN
+F 2 "" V 10380 2650 50  0000 C CNN
+F 3 "" H 10450 2650 50  0000 C CNN
+	1    10450 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 2550 10300 2550
+Wire Wire Line
+	10300 2400 10300 2650
+Connection ~ 10300 2550
+Wire Wire Line
+	10600 2400 10800 2400
+$Comp
+L +5V #PWR?
+U 1 1 5A4D164F
+P 10800 2400
+F 0 "#PWR?" H 10800 2250 50  0001 C CNN
+F 1 "+5V" H 10800 2540 50  0000 C CNN
+F 2 "" H 10800 2400 50  0000 C CNN
+F 3 "" H 10800 2400 50  0000 C CNN
+	1    10800 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A4D1FD8
+P 10800 2650
+F 0 "#PWR?" H 10800 2400 50  0001 C CNN
+F 1 "GND" H 10800 2500 50  0000 C CNN
+F 2 "" H 10800 2650 50  0000 C CNN
+F 3 "" H 10800 2650 50  0000 C CNN
+	1    10800 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10600 2650 10800 2650
+$Comp
+L R R?
+U 1 1 5A4D23E6
+P 9800 3250
+F 0 "R?" V 9880 3250 50  0000 C CNN
+F 1 "100K" V 9800 3250 50  0000 C CNN
+F 2 "" V 9730 3250 50  0000 C CNN
+F 3 "" H 9800 3250 50  0000 C CNN
+	1    9800 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9950 3250 10150 3250
+Wire Wire Line
+	9650 3250 9400 3250
+Wire Wire Line
+	9400 3250 9400 3550
+Text GLabel 10000 1700 0    60   Input ~ 0
++3.3V
+Text GLabel 10000 1400 0    60   Input ~ 0
+GND
+Text GLabel 10000 1500 0    60   Input ~ 0
+ESP_RX
+Text GLabel 10000 1600 0    60   Input ~ 0
+ESP_TX
+Text GLabel 10000 1300 0    60   Input ~ 0
+SW_X
+Text GLabel 10000 1200 0    60   Input ~ 0
+GND
+Wire Wire Line
+	10000 1200 10250 1200
+Wire Wire Line
+	10000 1300 10250 1300
+Wire Wire Line
+	10000 1400 10250 1400
+Wire Wire Line
+	10000 1500 10250 1500
+Wire Wire Line
+	10000 1600 10250 1600
+Wire Wire Line
+	10000 1700 10250 1700
+Text GLabel 7850 4600 2    60   Input ~ 0
+USB_DM
+Text GLabel 7850 4700 2    60   Input ~ 0
+USB_DP
+Text GLabel 7850 4400 2    60   Input ~ 0
+ESP_RX
+Text GLabel 7850 4500 2    60   Input ~ 0
+ESP_TX
+Wire Wire Line
+	7400 4400 7850 4400
+Wire Wire Line
+	7400 4500 7850 4500
+Wire Wire Line
+	7400 4600 7850 4600
+Wire Wire Line
+	7850 4700 7400 4700
+$EndSCHEMATC
