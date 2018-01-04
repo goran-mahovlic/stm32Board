@@ -1,4 +1,4 @@
-update=Wed 03 Jan 2018 05:27:45 PM CET
+update=Thu 04 Jan 2018 10:01:24 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=stm32
+LibName31=/home/mistery/3DprinterHack/libs/Cinch_enclosure_template/KICAD_Project/PCB-modules/pololu/pololu_a4988
