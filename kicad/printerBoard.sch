@@ -48,12 +48,12 @@ $EndDescr
 $Comp
 L STM32F103C8Tx U?
 U 1 1 5A4D049D
-P 4500 3600
-F 0 "U?" H 1700 5325 50  0000 L BNN
-F 1 "STM32F103C8Tx" H 7300 5325 50  0000 R BNN
-F 2 "LQFP48" H 7300 5275 50  0000 R TNN
-F 3 "" H 4500 3600 50  0000 C CNN
-	1    4500 3600
+P 4100 2800
+F 0 "U?" H 1300 4525 50  0000 L BNN
+F 1 "STM32F103C8Tx" H 6900 4525 50  0000 R BNN
+F 2 "LQFP48" H 6900 4475 50  0000 R TNN
+F 3 "" H 4100 2800 50  0000 C CNN
+	1    4100 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -279,22 +279,22 @@ Wire Wire Line
 	10000 1600 10250 1600
 Wire Wire Line
 	10000 1700 10250 1700
-Text GLabel 7850 4600 2    60   Input ~ 0
+Text GLabel 7450 3800 2    60   Input ~ 0
 USB_DM
-Text GLabel 7850 4700 2    60   Input ~ 0
+Text GLabel 7450 3900 2    60   Input ~ 0
 USB_DP
-Text GLabel 7850 4400 2    60   Input ~ 0
+Text GLabel 7450 3600 2    60   Input ~ 0
 ESP_RX
-Text GLabel 7850 4500 2    60   Input ~ 0
+Text GLabel 7450 3700 2    60   Input ~ 0
 ESP_TX
 Wire Wire Line
-	7400 4400 7850 4400
+	7000 3600 7450 3600
 Wire Wire Line
-	7400 4500 7850 4500
+	7000 3700 7450 3700
 Wire Wire Line
-	7400 4600 7850 4600
+	7000 3800 7450 3800
 Wire Wire Line
-	7850 4700 7400 4700
+	7450 3900 7000 3900
 $Comp
 L POLOLU_A4988 U1
 U 1 1 5A4E8809
@@ -471,7 +471,7 @@ F 3 "" H 5800 5900 50  0000 C CNN
 	1    5800 5900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1500 4900 0    60   Input ~ 0
+Text GLabel 1100 4100 0    60   Input ~ 0
 XSTEP
 Text GLabel 2450 6900 2    60   Input ~ 0
 XSTEP
@@ -485,32 +485,32 @@ Wire Wire Line
 	4600 6900 4700 6900
 Text GLabel 2450 6800 2    60   Input ~ 0
 XDIR
-Text GLabel 1500 5000 0    60   Input ~ 0
+Text GLabel 1100 4200 0    60   Input ~ 0
 XDIR
 Wire Wire Line
-	1500 4900 1600 4900
+	1100 4100 1200 4100
 Wire Wire Line
-	1500 5000 1600 5000
+	1100 4200 1200 4200
 Wire Wire Line
 	2450 6800 2350 6800
 Text GLabel 4700 6800 2    60   Input ~ 0
 ADIR
-Text GLabel 1500 4700 0    60   Input ~ 0
+Text GLabel 1100 3900 0    60   Input ~ 0
 ASTEP
-Text GLabel 1500 4800 0    60   Input ~ 0
+Text GLabel 1100 4000 0    60   Input ~ 0
 ADIR
 Wire Wire Line
-	1500 4700 1600 4700
+	1100 3900 1200 3900
 Wire Wire Line
-	1500 4800 1600 4800
-Text GLabel 7850 4300 2    60   Input ~ 0
+	1100 4000 1200 4000
+Text GLabel 7450 3500 2    60   Input ~ 0
 XENABLE
-Text GLabel 1500 4600 0    60   Input ~ 0
+Text GLabel 1100 3800 0    60   Input ~ 0
 AENABLE
 Wire Wire Line
-	7400 4300 7850 4300
+	7000 3500 7450 3500
 Wire Wire Line
-	1500 4600 1600 4600
+	1100 3800 1200 3800
 Wire Wire Line
 	2350 7200 2500 7200
 Wire Wire Line
@@ -573,4 +573,73 @@ Connection ~ 2500 7200
 Wire Wire Line
 	2350 7000 2500 7000
 Connection ~ 2500 7100
+$Comp
+L Micro_SD_Card CON?
+U 1 1 5A4FD093
+P 10150 4650
+F 0 "CON?" H 9500 5250 50  0000 C CNN
+F 1 "Micro_SD_Card" H 10800 5250 50  0000 R CNN
+F 2 "" H 11300 4950 50  0000 C CNN
+F 3 "" H 10150 4650 50  0000 C CNN
+	1    10150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5A4FD75F
+P 9100 4650
+F 0 "#PWR?" H 9100 4500 50  0001 C CNN
+F 1 "+3.3V" H 9100 4790 50  0000 C CNN
+F 2 "" H 9100 4650 50  0000 C CNN
+F 3 "" H 9100 4650 50  0000 C CNN
+	1    9100 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A4FD935
+P 9100 4850
+F 0 "#PWR?" H 9100 4600 50  0001 C CNN
+F 1 "GND" H 9100 4700 50  0000 C CNN
+F 2 "" H 9100 4850 50  0000 C CNN
+F 3 "" H 9100 4850 50  0000 C CNN
+	1    9100 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 4650 9250 4650
+Wire Wire Line
+	9100 4850 9250 4850
+Text GLabel 9100 4450 0    60   Input ~ 0
+SD_CD
+Wire Wire Line
+	9100 4450 9250 4450
+Text GLabel 7450 3100 2    60   Input ~ 0
+SD_CD
+Wire Wire Line
+	7000 3100 7450 3100
+Text GLabel 9100 4550 0    60   Input ~ 0
+SD_CMD
+Text GLabel 7450 3400 2    60   Input ~ 0
+SD_CMD
+Wire Wire Line
+	7000 3400 7450 3400
+Wire Wire Line
+	9100 4550 9250 4550
+Text GLabel 9100 4750 0    60   Input ~ 0
+SD_CLK
+Wire Wire Line
+	9100 4750 9250 4750
+Text GLabel 9100 4950 0    60   Input ~ 0
+SD_DAT0
+Text GLabel 7450 3300 2    60   Input ~ 0
+SD_DAT0
+Wire Wire Line
+	7000 3300 7450 3300
+Text GLabel 7450 3200 2    60   Input ~ 0
+SD_CLK
+Wire Wire Line
+	7000 3200 7450 3200
+Wire Wire Line
+	9100 4950 9250 4950
 $EndSCHEMATC
