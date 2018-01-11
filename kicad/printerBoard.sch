@@ -924,4 +924,8 @@ Text GLabel 2900 5050 0    60   Input ~ 0
 ULN11
 Wire Wire Line
 	2900 5050 3050 5050
+Text GLabel 1050 3100 0    60   Input ~ 0
+SW_X
+Wire Wire Line
+	1050 3100 1200 3100
 $EndSCHEMATC

@@ -786,7 +786,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 5800 5750 5700
 Text GLabel 5350 5800 3    60   Input ~ 0
-ULN11
+ULN12
 Wire Wire Line
 	5350 5700 5350 5800
 Text GLabel 9100 1500 2    60   Input ~ 0
@@ -821,4 +821,107 @@ Wire Wire Line
 	6650 5800 6650 5700
 Wire Wire Line
 	6450 5700 6450 5800
+$Comp
+L R R?
+U 1 1 5A4FF995
+P 950 3300
+F 0 "R?" V 1030 3300 50  0000 C CNN
+F 1 "26" V 950 3300 50  0000 C CNN
+F 2 "" V 880 3300 50  0000 C CNN
+F 3 "" H 950 3300 50  0000 C CNN
+	1    950  3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 3300 1200 3300
+Text GLabel 700  3300 0    60   Input ~ 0
+Q5pin1
+Wire Wire Line
+	700  3300 800  3300
+Text GLabel 700  3400 0    60   Input ~ 0
+Q1pin1
+$Comp
+L R R?
+U 1 1 5A500729
+P 950 3400
+F 0 "R?" V 1030 3400 50  0000 C CNN
+F 1 "26" V 950 3400 50  0000 C CNN
+F 2 "" V 880 3400 50  0000 C CNN
+F 3 "" H 950 3400 50  0000 C CNN
+	1    950  3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 3400 1200 3400
+Wire Wire Line
+	700  3400 800  3400
+Text GLabel 1050 3200 0    60   Input ~ 0
+Zpin2
+Wire Wire Line
+	1050 3200 1200 3200
+$Comp
+L CONN_01X02 P?
+U 1 1 5A500B80
+P 1350 5000
+F 0 "P?" H 1350 5150 50  0000 C CNN
+F 1 "Z" V 1450 5000 50  0000 C CNN
+F 2 "" H 1350 5000 50  0000 C CNN
+F 3 "" H 1350 5000 50  0000 C CNN
+	1    1350 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 5050 0    60   Input ~ 0
+Zpin2
+Wire Wire Line
+	1000 5050 1150 5050
+Text GLabel 1000 4950 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1000 4950 1150 4950
+$Comp
+L CONN_01X02 P?
+U 1 1 5A50155E
+P 2300 5000
+F 0 "P?" H 2300 5150 50  0000 C CNN
+F 1 "B" V 2400 5000 50  0000 C CNN
+F 2 "" H 2300 5000 50  0000 C CNN
+F 3 "" H 2300 5000 50  0000 C CNN
+	1    2300 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 5050 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1950 5050 2100 5050
+Text GLabel 1950 4950 0    60   Input ~ 0
+Bpin1
+Wire Wire Line
+	1950 4950 2100 4950
+Text GLabel 7450 2800 2    60   Input ~ 0
+Bpin1
+Wire Wire Line
+	7000 2800 7450 2800
+$Comp
+L CONN_01X02 P?
+U 1 1 5A5040F8
+P 3250 5000
+F 0 "P?" H 3250 5150 50  0000 C CNN
+F 1 "FAN" V 3350 5000 50  0000 C CNN
+F 2 "" H 3250 5000 50  0000 C CNN
+F 3 "" H 3250 5000 50  0000 C CNN
+	1    3250 5000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 4950 0    60   Input ~ 0
++12V
+Wire Wire Line
+	2900 4950 3050 4950
+Text GLabel 9100 1400 2    60   Input ~ 0
+ULN12
+Wire Wire Line
+	9000 1400 9100 1400
+Text GLabel 2900 5050 0    60   Input ~ 0
+ULN11
+Wire Wire Line
+	2900 5050 3050 5050
 $EndSCHEMATC
