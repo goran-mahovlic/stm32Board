@@ -332,7 +332,7 @@ Text GLabel 1050 6800 0    60   Input ~ 0
 GND
 Text GLabel 3300 6800 0    60   Input ~ 0
 GND
-Text GLabel 6450 5800 3    60   Input ~ 0
+Text GLabel 6650 5150 3    60   Input ~ 0
 GND
 $Comp
 L CONN_01X04 P?
@@ -365,13 +365,13 @@ XOUT1A
 Text GLabel 1450 6000 0    60   Input ~ 0
 XOUT1B
 Text GLabel 3450 6000 0    60   Input ~ 0
-AOUT1B
+YOUT1B
 Text GLabel 3450 6100 0    60   Input ~ 0
-AOUT1A
+YOUT1A
 Text GLabel 3450 6200 0    60   Input ~ 0
-AOUT2A
+YOUT2A
 Text GLabel 3450 6300 0    60   Input ~ 0
-AOUT2B
+YOUT2B
 Wire Wire Line
 	1450 6000 1550 6000
 Wire Wire Line
@@ -397,13 +397,13 @@ XOUT2A
 Text GLabel 1050 7300 0    60   Input ~ 0
 XOUT2B
 Text GLabel 3300 7000 0    60   Input ~ 0
-AOUT1B
+YOUT1B
 Text GLabel 3300 7100 0    60   Input ~ 0
-AOUT1A
+YOUT1A
 Text GLabel 3300 7200 0    60   Input ~ 0
-AOUT2A
+YOUT2A
 Text GLabel 3300 7300 0    60   Input ~ 0
-AOUT2B
+YOUT2B
 Text GLabel 1050 7400 0    60   Input ~ 0
 GND
 $Comp
@@ -469,7 +469,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 6750 2950 6900
 Text GLabel 4700 6900 2    60   Input ~ 0
-ASTEP
+YSTEP
 Wire Wire Line
 	4600 6900 4700 6900
 Text GLabel 2450 6800 2    60   Input ~ 0
@@ -483,11 +483,11 @@ Wire Wire Line
 Wire Wire Line
 	2450 6800 2350 6800
 Text GLabel 4700 6800 2    60   Input ~ 0
-ADIR
+YDIR
 Text GLabel 1100 3900 0    60   Input ~ 0
-ASTEP
+YSTEP
 Text GLabel 1100 4000 0    60   Input ~ 0
-ADIR
+YDIR
 Wire Wire Line
 	1100 3900 1200 3900
 Wire Wire Line
@@ -495,7 +495,7 @@ Wire Wire Line
 Text GLabel 7450 3500 2    60   Input ~ 0
 XENABLE
 Text GLabel 1100 3800 0    60   Input ~ 0
-AENABLE
+YENABLE
 Wire Wire Line
 	7000 3500 7450 3500
 Wire Wire Line
@@ -545,7 +545,7 @@ F 3 "" H 4900 7300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 4700 7500 2    60   Input ~ 0
-AENABLE
+YENABLE
 Wire Wire Line
 	4600 7500 4700 7500
 Wire Wire Line
@@ -645,15 +645,15 @@ $EndComp
 $Comp
 L CONN_01X16 P?
 U 1 1 5A4EABEF
-P 6000 5500
-F 0 "P?" H 6000 6350 50  0000 C CNN
-F 1 "CONN_01X16" V 6100 5500 50  0000 C CNN
-F 2 "" H 6000 5500 50  0000 C CNN
-F 3 "" H 6000 5500 50  0000 C CNN
-	1    6000 5500
+P 6200 4850
+F 0 "P?" H 6200 5700 50  0000 C CNN
+F 1 "CONN_01X16" V 6300 4850 50  0000 C CNN
+F 2 "" H 6200 4850 50  0000 C CNN
+F 3 "" H 6200 4850 50  0000 C CNN
+	1    6200 4850
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5250 5800 3    60   Input ~ 0
+Text GLabel 5450 5150 3    60   Input ~ 0
 +12V
 Text GLabel 1050 7500 0    60   Input ~ 0
 +12V
@@ -667,19 +667,8 @@ Text GLabel 5400 7200 0    60   Input ~ 0
 +12V
 Wire Wire Line
 	5400 7200 5450 7200
-$Comp
-L CONN_01X04 P?
-U 1 1 5A502458
-P 4800 6100
-F 0 "P?" H 4800 6350 50  0000 C CNN
-F 1 "CONN_01X04" V 4900 6100 50  0000 C CNN
-F 2 "" H 4800 6100 50  0000 C CNN
-F 3 "" H 4800 6100 50  0000 C CNN
-	1    4800 6100
-	1    0    0    -1  
-$EndComp
 Text GLabel 6700 7200 2    60   Input ~ 0
-YENABLE
+EENABLE
 Wire Wire Line
 	6650 7200 6700 7200
 $Comp
@@ -709,9 +698,9 @@ Wire Wire Line
 	6650 6700 6750 6700
 Connection ~ 6750 6800
 Text GLabel 6700 6600 2    60   Input ~ 0
-YSTEP
+ESTEP
 Text GLabel 6700 6500 2    60   Input ~ 0
-YDIR
+EDIR
 Wire Wire Line
 	6650 6500 6700 6500
 Wire Wire Line
@@ -719,13 +708,13 @@ Wire Wire Line
 Text GLabel 5400 7100 0    60   Input ~ 0
 GND
 Text GLabel 5400 7000 0    60   Input ~ 0
-YOUT2B
+EOUT2B
 Text GLabel 5400 6900 0    60   Input ~ 0
-YOUT2A
+EOUT2A
 Text GLabel 5400 6800 0    60   Input ~ 0
-YOUT1A
+EOUT1A
 Text GLabel 5400 6700 0    60   Input ~ 0
-YOUT1B
+EOUT1B
 Text GLabel 5400 6500 0    60   Input ~ 0
 GND
 $Comp
@@ -756,71 +745,71 @@ Wire Wire Line
 Wire Wire Line
 	5400 7100 5450 7100
 Text GLabel 1100 2900 0    60   Input ~ 0
-YDIR
+ZDIR
 Text GLabel 1100 3700 0    60   Input ~ 0
-YSTEP
+ZSTEP
 Wire Wire Line
 	1100 2900 1200 2900
 Wire Wire Line
 	1100 3700 1200 3700
 Text GLabel 1100 3500 0    60   Input ~ 0
-YENABLE
+ZENABLE
 Wire Wire Line
 	1100 3500 1200 3500
-Text GLabel 5650 5800 3    60   Input ~ 0
-AOUT2A
-Text GLabel 5550 5800 3    60   Input ~ 0
-AOUT1A
+Text GLabel 5850 5150 3    60   Input ~ 0
+EOUT2A
+Text GLabel 5750 5150 3    60   Input ~ 0
+EOUT1A
 Wire Wire Line
-	5550 5700 5550 5800
+	5750 5050 5750 5150
 Wire Wire Line
-	5650 5700 5650 5800
+	5850 5050 5850 5150
 Wire Wire Line
-	5250 5700 5250 5800
-Text GLabel 5450 5800 3    60   Input ~ 0
-AOUT1B
-Text GLabel 5750 5800 3    60   Input ~ 0
-AOUT2B
+	5450 5050 5450 5150
+Text GLabel 5650 5150 3    60   Input ~ 0
+EOUT1B
+Text GLabel 5950 5150 3    60   Input ~ 0
+EOUT2B
 Wire Wire Line
-	5450 5800 5450 5700
+	5650 5150 5650 5050
 Wire Wire Line
-	5750 5800 5750 5700
-Text GLabel 5350 5800 3    60   Input ~ 0
-ULN12
+	5950 5150 5950 5050
+Text GLabel 5550 5150 3    60   Input ~ 0
+ExtruderFAN
 Wire Wire Line
-	5350 5700 5350 5800
+	5550 5050 5550 5150
 Text GLabel 9100 1500 2    60   Input ~ 0
 ULN11
 Wire Wire Line
 	9000 1500 9100 1500
 Wire Wire Line
-	5850 5700 5850 5750
+	6050 5050 6050 5100
 Wire Wire Line
-	5850 5750 6050 5750
+	6050 5100 6250 5100
 Wire Wire Line
-	5950 5700 5950 5800
-Text GLabel 5950 5800 3    60   Input ~ 0
+	6150 5050 6150 5150
+Text GLabel 6150 5150 3    60   Input ~ 0
 +12V
-Connection ~ 5950 5750
+Connection ~ 6150 5100
 Wire Wire Line
-	6050 5750 6050 5700
+	6250 5100 6250 5050
 Wire Wire Line
-	6150 5700 6150 5750
+	6350 5050 6350 5100
 Wire Wire Line
-	6150 5750 6350 5750
+	6350 5100 6550 5100
 Wire Wire Line
-	6350 5750 6350 5700
+	6550 5100 6550 5050
 Wire Wire Line
-	6250 5700 6250 5800
-Connection ~ 6250 5750
-Text GLabel 6250 5800 3    60   Input ~ 0
-Q1pin2
-Text GLabel 6650 5800 3    60   Input ~ 0
+	6450 5050 6450 5150
+Connection ~ 6450 5100
+Text GLabel 6450 5150 3    60   Input ~ 0
+Q1pin2-ExtruderHeater
+Text GLabel 6850 5150 3    60   Input ~ 0
 GND
 Wire Wire Line
-	6650 5800 6650 5700
+	6850 5150 6850 5050
 Wire Wire Line
-	6450 5700 6450 5800
+	6650 5050 6650 5150
 $Comp
 L R R?
 U 1 1 5A4FF995
@@ -856,7 +845,7 @@ Wire Wire Line
 Wire Wire Line
 	700  3400 800  3400
 Text GLabel 1050 3200 0    60   Input ~ 0
-Zpin2
+SW_Z
 Wire Wire Line
 	1050 3200 1200 3200
 $Comp
@@ -898,7 +887,7 @@ Bpin1
 Wire Wire Line
 	1950 4950 2100 4950
 Text GLabel 7450 2800 2    60   Input ~ 0
-Bpin1
+BedSensor
 Wire Wire Line
 	7000 2800 7450 2800
 $Comp
@@ -928,4 +917,95 @@ Text GLabel 1050 3100 0    60   Input ~ 0
 SW_X
 Wire Wire Line
 	1050 3100 1200 3100
+Text GLabel 6750 5150 3    60   Input ~ 0
+SW_Y
+Wire Wire Line
+	6750 5150 6750 5050
+Text GLabel 6950 5150 3    60   Input ~ 0
+Extruder_Sensor
+Wire Wire Line
+	6950 5150 6950 5050
+Text GLabel 7450 2700 2    60   Input ~ 0
+Extruder_Sensor
+Wire Wire Line
+	7000 2700 7450 2700
+$Comp
+L CONN_01X05 P?
+U 1 1 5A5C0404
+P 4700 6000
+F 0 "P?" H 4700 6300 50  0000 C CNN
+F 1 "CONN_01X05" V 4800 6000 50  0000 C CNN
+F 2 "" H 4700 6000 50  0000 C CNN
+F 3 "" H 4700 6000 50  0000 C CNN
+	1    4700 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 5800 0    60   Input ~ 0
+Z1
+Text GLabel 4400 5900 0    60   Input ~ 0
+Z2
+Text GLabel 4400 6000 0    60   Input ~ 0
+Z3
+Text GLabel 4400 6100 0    60   Input ~ 0
+Z4
+Text GLabel 4400 6200 0    60   Input ~ 0
+Z5
+Wire Wire Line
+	4400 5800 4500 5800
+Wire Wire Line
+	4400 5900 4500 5900
+Wire Wire Line
+	4400 6000 4500 6000
+Wire Wire Line
+	4400 6100 4500 6100
+Wire Wire Line
+	4400 6200 4500 6200
+Text GLabel 9150 1000 2    60   Input ~ 0
+Z1
+Wire Wire Line
+	9000 1000 9150 1000
+Text GLabel 9150 1100 2    60   Input ~ 0
+Z2
+Text GLabel 9150 1800 2    60   Input ~ 0
+Z3
+Text GLabel 9150 1200 2    60   Input ~ 0
+Z4
+Wire Wire Line
+	9000 1100 9150 1100
+Wire Wire Line
+	9000 1200 9150 1200
+Wire Wire Line
+	9150 1800 9000 1800
+Text GLabel 9150 1300 2    60   Input ~ 0
+Z5
+Wire Wire Line
+	9000 1300 9150 1300
+Text GLabel 7550 1000 0    60   Input ~ 0
+PB1
+Text GLabel 7550 1100 0    60   Input ~ 0
+PB0
+Text GLabel 7550 1200 0    60   Input ~ 0
+PC13
+Text GLabel 7550 1300 0    60   Input ~ 0
+PC14
+Text GLabel 7550 1400 0    60   Input ~ 0
+PB14
+Text GLabel 7550 1500 0    60   Input ~ 0
+PA13
+Wire Wire Line
+	7550 1000 7700 1000
+Wire Wire Line
+	7550 1100 7700 1100
+Wire Wire Line
+	7550 1200 7700 1200
+Wire Wire Line
+	7550 1300 7700 1300
+Wire Wire Line
+	7550 1400 7700 1400
+Wire Wire Line
+	7550 1500 7700 1500
+Text GLabel 7450 4000 2    60   Input ~ 0
+PA13
+Wire Wire Line
+	7000 4000 7450 4000
 $EndSCHEMATC
