@@ -12,6 +12,10 @@ I have connected SD card to it, and with original bootloader
 I can flash some code on bluepill.
 I can send GCODE to SD card.
 
+I can now compile Marlin firmware for M200
+When I put it on board and start serial right after booting I can see serial output.
+Same if I connect with repetier host on start I get serial, but after that I cannot send commands. Like serial>>bluepill is not working 
+
 If you realy think you need bootloader, you can contact me over email
 
 goran.mahovlic@gmail.com
