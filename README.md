@@ -13,8 +13,14 @@ I can flash some code on bluepill.
 I can send GCODE to SD card.
 
 I can now compile Marlin firmware for M200
-When I put it on board and start serial right after booting I can see serial output.
-Same if I connect with repetier host on start I get serial, but after that I cannot send commands. Like serial>>bluepill is not working 
+
+I did solve serial issue and working serial branch is now here
+
+https://github.com/marvin-sinister/Marlin/tree/radiona-2.0.x
+
+I did not try this code on priter, so be carefull ...
+
+One problem still remains, fox Z axis M100 uses ULN2003 so fot Z you need write some step direction function.
 
 If you realy think you need bootloader, you can contact me over email
 
